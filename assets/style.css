@@ -1,0 +1,149 @@
+* {
+  /* css resetting */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --primary-color: #2b70c5;
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 15px 20px;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+#logo img {
+  padding: 10px 100px;
+  max-width: 100%;
+}
+
+#navbar-items {
+  display: flex;
+}
+
+#navbar-items li {
+  padding: 0 15px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on focus */
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+#myDropdown img{
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    background-color: rgb(214, 237, 244);
+    color: #2980b9;
+    border-radius: 5px;
+    
+}
+
+#demo-btn {
+  border-radius: 25px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 20px;
+  margin-left: 10px;
+}
+
+#main-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#main-section > h1 > span {
+  color: var(--primary-color);
+  font-size: 40px;
+}
+
+#main-section > h5 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#main-section > h1 {
+  max-width: 40%;
+  margin: 10px auto;
+  font-size: 50px;
+}
+
+#main-section > p {
+  max-width: 50%;
+  margin: 15px auto 25px auto;
+}
+
+#secondary-btn {
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+#image-section {
+  margin: 2rem 0;
+}
+
+#image-section > img {
+  max-width: 96%;
+  margin: 0 2%;
+}

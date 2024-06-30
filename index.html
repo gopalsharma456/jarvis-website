@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <a href="https://jarvisinvest.com/">
+          <img src="./assets/images/Jarvis-logo.svg" alt="Jarvis logo" />
+        </a>
+      </div>
+      <ul id="navbar-items">
+        <div class="dropdown">
+        <li onclick="productBtn()" class="dropbtn">
+            Products
+            <img src="./assets/images/chevron-down.svg" alt="down arrow" />
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#"><img src="./assets/images/jarvis-pms-icon.svg" alt="jarvis pms icon">Jarvis Portfolio</a>
+              <a href="#"><img src="./assets/images/jarvis-wls-icon.svg" alt="">Jarvis Protect</a>
+              <a href="#"><img src="assets/images/jarvis-api-icon.svg" alt="">Jarvis One Stock</a>
+            </div>
+        </li>
+    </div>
+        <li>
+          Solutions
+          <img src="./assets/images/chevron-down.svg" alt="down arrow" />
+        </li>
+        <li>Company</li>
+        <li>Library</li>
+        <li>Media</li>
+        <li>Contact Us</li>
+        <li><img src="./assets/images/retail-icon.svg" alt=""> Retail <img src="assets/images/right-arrow-icon.svg" alt=""></li>
+      </ul>
+      <button id="demo-btn">Schedule Demo</button>
+    </nav>
+    <main id="main-section">
+      <h5>REDEFINE THE PARADIGM IN MANAGING YOUR INVESTMENTS</h5>
+      <h1><span>AI Driven</span> Investment Solutions Platform</h1>
+      <p>
+        Explore Solutions That Are Curated To Simplify And Streamline Every
+        Aspect Of A Customer's Journey In The Equity Markets.
+      </p>
+      <button id="secondary-btn">Schedule Demo</button>
+    </main>
+    <section id="image-section">
+      <img
+        src="https://institution.jarvisinvest.com/assets//images/home/jarvis-video.gif"
+        alt="jarvis-video"
+      />
+    </section>
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>
