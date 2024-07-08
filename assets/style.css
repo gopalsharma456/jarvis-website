@@ -8,7 +8,9 @@
 }
 
 :root {
-  --primary-color: #2b70c5;
+  --primary-background-color: #0b5ed7;
+  --primary-color: #ffffff;
+  --blue-text: #2b70c5;
 }
 
 button,
@@ -24,126 +26,335 @@ li {
   list-style: none;
 }
 
-#navbar {
+a {
+  text-decoration: none;
+}
+
+img, svg{
+  vertical-align: middle;
+}
+
+.primary-btn {
+  background-color: #1566d6;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 62px;
+  margin: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-blue {
+  color: #2b70c5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* navbar section start */
+
+.logo {
+  padding: 14px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.navbar-items {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgb(215, 215, 215);
 }
 
-#logo img {
-  padding: 10px 100px;
-  max-width: 100%;
+.navbar-items li {
+  padding: 0 12px;
 }
 
-#navbar-items {
+.nav-link {
   display: flex;
+  align-items: center;
 }
 
-#navbar-items li {
-  padding: 0 15px;
-}
-
-/* Dropdown Button */
-.dropbtn {
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Dropdown button on focus */
-.dropbtn:focus {
-  background-color: #2980b9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.myDropdown {
   display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+/* navbar section ends */
+
+/* main section start */
+
+.main-section {
+  padding-top: 60px;
+  padding-bottom: 52px;
+  color: #303236;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-  display: block;
-}
-
-#myDropdown img{
-    width: 32px;
-    height: 32px;
-    padding: 5px;
-    background-color: rgb(214, 237, 244);
-    color: #2980b9;
-    border-radius: 5px;
-    
-}
-
-#demo-btn {
-  border-radius: 25px;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 15px 20px;
-  margin-left: 10px;
-}
-
-#main-section {
+.main-section .container {
+  max-width: 880px;
   text-align: center;
-  margin-top: 50px;
+  padding-top: 20px;
+  width: 100%;
+  margin: auto;
 }
 
-#main-section > h1 > span {
-  color: var(--primary-color);
-  font-size: 40px;
-}
-
-#main-section > h5 {
-  font-size: 12px;
+.header-text-medium {
+  font-size: 14px;
   font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
-#main-section > h1 {
-  max-width: 40%;
-  margin: 10px auto;
+.main-section h1 {
+  font-size: 67px;
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 104.627%;
+  letter-spacing: -2.68px;
+  text-transform: capitalize;
+}
+
+.blue-text {
+  font-size: 67px;
+  color: var(--blue-text);
+}
+
+.text-extra-big {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.44px;
+}
+
+.secondary-btn {
+  margin-top: 32px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.44px;
+  padding: 20px 40px;
+  border-radius: 62px;
+  background: transparent;
+  border: 1px solid rgba(48, 50, 54, 0.2);
+  color: #303236;
+}
+
+.image-section {
+  padding-bottom: 108px;
+}
+
+/* main section ends */
+
+/* jarvis video section starts */
+.container-fluid {
+  width: 100%;
+  padding-left: 42px;
+  padding-right: 42px;
+  margin: 0 auto;
+}
+
+.image-section img {
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+/* jarvis video section ends */
+
+/* features section starts */
+
+.features-section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  margin-bottom: 108px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.features-section .container {
+  max-width: 1030px;
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.features-title {
+  margin-bottom: 1.5rem;
+}
+
+.features-title,
+.features-title span {
   font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -2px;
 }
 
-#main-section > p {
-  max-width: 50%;
-  margin: 15px auto 25px auto;
+.features-subtitle-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 168%;
+  letter-spacing: -0.18px;
+  text-transform: capitalize;
 }
 
-#secondary-btn {
-  background-color: white;
-  border: 1px solid lightgray;
+.features-section-columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 52px;
 }
 
-#image-section {
-  margin: 2rem 0;
+.features-box {
+  border-radius: 16px;
+  min-height: 187px;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(21, 102, 214, 0.18);
+  background: rgba(43, 112, 197, 0.01);
+  color: #303236;
+  margin-right: 20px;
 }
 
-#image-section > img {
-  max-width: 96%;
-  margin: 0 2%;
+.features-box:not(:last-child) {
+  margin-bottom: 20px;
 }
+
+.features-box:nth-child(2) {
+  background: rgba(43, 112, 197, 0.04);
+}
+.features-box:nth-child(3) {
+  background: rgba(43, 112, 197, 0.1);
+}
+
+.features-box img {
+  margin-right: 32px;
+}
+
+.features-box .big-text {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 2rem;
+}
+
+/* features section ends */
+
+/* why us section start */
+
+.why-us {
+  background: rgb(247, 250, 253);
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.why-us .container {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.why-us-title,
+.why-us-title span {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+}
+
+.why-us-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 168%;
+  letter-spacing: -0.18px;
+  text-transform: capitalize;
+}
+
+.why-us .stats-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 64px;
+}
+
+.stats-row .blue-text {
+  margin-bottom: 8px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -2px;
+  /* text-transform: capitalize; */
+}
+
+.stats-row .small-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 168%;
+  letter-spacing: -0.18px;
+  text-transform: capitalize;
+}
+
+/* why us section ends */
+
+/* who-we-serve section start */
+
+.who-we-serve {
+  padding-top: 108px;
+}
+
+.who-we-serve .container .serve-title,
+.serve-title span {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+}
+
+.serve-title{
+  margin-bottom: 3rem;
+}
+
+.columns{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.service-box{
+  width: 100%;
+}
+
+.service-box .hover-image {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+
+.service-box img{
+  width: 100%;
+}
+
+/* .service-box .main-image:hover {
+  display: none;
+}
+.service-box .hover-image:hover {
+  visibility: visible;
+  height: 50%;
+  opacity: 0.9;
+}
+ */
+
+
+
+/* who-we-serve section ends */

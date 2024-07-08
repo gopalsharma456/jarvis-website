@@ -13,24 +13,38 @@
     <title>Document</title>
   </head>
   <body>
-    <nav id="navbar">
-      <div id="logo">
-        <a href="https://jarvisinvest.com/">
+    <nav class="navbar">
+      <div class="logo">
+        <a class="navbar-brand" href="https://jarvisinvest.com/">
           <img src="./assets/images/Jarvis-logo.svg" alt="Jarvis logo" />
         </a>
       </div>
-      <ul id="navbar-items">
-        <div class="dropdown">
+      <ul class="navbar-items">
+        <li>
+          <a class="nav-link" href="#">Home</a>
+        </li>
         <li onclick="productBtn()" class="dropbtn">
+          <div class="dropdown">
             Products
             <img src="./assets/images/chevron-down.svg" alt="down arrow" />
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#"><img src="./assets/images/jarvis-pms-icon.svg" alt="jarvis pms icon">Jarvis Portfolio</a>
-              <a href="#"><img src="./assets/images/jarvis-wls-icon.svg" alt="">Jarvis Protect</a>
-              <a href="#"><img src="assets/images/jarvis-api-icon.svg" alt="">Jarvis One Stock</a>
-            </div>
+            <!-- <div class="myDropdown dropdown-content">
+              <a href="#"
+                ><img
+                  src="./assets/images/jarvis-pms-icon.svg"
+                  alt="jarvis pms icon"
+                />Jarvis Portfolio</a
+              >
+              <a href="#"
+                ><img src="./assets/images/jarvis-wls-icon.svg" alt="" />Jarvis
+                Protect</a
+              >
+              <a href="#"
+                ><img src="assets/images/jarvis-api-icon.svg" alt="" />Jarvis
+                One Stock</a
+              >
+            </div> -->
+          </div>
         </li>
-    </div>
         <li>
           Solutions
           <img src="./assets/images/chevron-down.svg" alt="down arrow" />
@@ -39,24 +53,182 @@
         <li>Library</li>
         <li>Media</li>
         <li>Contact Us</li>
-        <li><img src="./assets/images/retail-icon.svg" alt=""> Retail <img src="assets/images/right-arrow-icon.svg" alt=""></li>
+        <li>
+          <img src="./assets/images/retail-icon.svg" alt="" /> Retail
+          <img src="assets/images/right-arrow-icon.svg" alt="" />
+        </li>
+        <li>
+          <button class="demo-btn primary-btn">Schedule Demo</button>
+        </li>
       </ul>
-      <button id="demo-btn">Schedule Demo</button>
     </nav>
-    <main id="main-section">
-      <h5>REDEFINE THE PARADIGM IN MANAGING YOUR INVESTMENTS</h5>
-      <h1><span>AI Driven</span> Investment Solutions Platform</h1>
-      <p>
-        Explore Solutions That Are Curated To Simplify And Streamline Every
-        Aspect Of A Customer's Journey In The Equity Markets.
-      </p>
-      <button id="secondary-btn">Schedule Demo</button>
+
+    <main class="main-section">
+      <div class="container text-center">
+        <h5 class="header-text-medium">
+          REDEFINE THE PARADIGM IN MANAGING YOUR INVESTMENTS
+        </h5>
+        <h1>
+          <span class="blue-text">AI Driven</span> Investment Solutions Platform
+        </h1>
+        <p class="text-extra-big">
+          Explore Solutions That Are Curated To Simplify And Streamline Every
+          Aspect Of A Customer's Journey In The Equity Markets.
+        </p>
+        <button class="secondary-btn">Schedule Demo</button>
+      </div>
     </main>
-    <section id="image-section">
-      <img
-        src="https://institution.jarvisinvest.com/assets//images/home/jarvis-video.gif"
-        alt="jarvis-video"
-      />
+
+    <section class="image-section">
+      <div class="container-fluid">
+        <img
+          src="https://institution.jarvisinvest.com/assets//images/home/jarvis-video.gif"
+          alt="jarvis-video"
+        />
+      </div>
+    </section>
+
+    <div class="features-section">
+      <div class="container">
+        <div class="center-text">
+          <div class="features-title">
+            Analyze The
+            <span class="text-blue">Unknown</span>
+          </div>
+          <div class="features-subtitle-text">
+            A stock can be affected by a myriad of reasons. Our AI engine reads
+            through millions of data points to understand the “X” factor that
+            can affect the stock.
+          </div>
+        </div>
+        <div class="features-section-columns">
+          <div class="left-column">
+            <div class="features-box">
+              <img src="assets/images/chart.svg" alt="chart" />
+              <div>
+                <div class="big-text">40 Mn Data Points</div>
+                <div class="text-description">
+                  The amount of data JARVIS Analyzes per market on a daily basis
+                </div>
+              </div>
+            </div>
+            <div class="features-box">
+              <img src="assets/images/timer.svg" alt="chart" />
+              <div>
+                <div class="big-text">Proprietary Deep Learning Models</div>
+                <div class="text-description">
+                  Our models have been trained to learn from its environment and
+                  reinforce its decisions.
+                </div>
+              </div>
+            </div>
+            <div class="features-box">
+              <img src="assets/images/shieldtick.svg" alt="chart" />
+              <div>
+                <div class="big-text">Intelligent Insights</div>
+                <div class="text-description">
+                  JARVIS generates smart predictive insights for faster decision
+                  making
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="features-img-box">
+              <img src="assets/images/jarvis-graph.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="why-us">
+      <div class="container">
+        <div class="why-us-title">
+          why <span class="text-blue">jarvis</span>
+        </div>
+        <div class="why-us-subtitle">At JARVIS We Understand The Importance Of Creating Bespoke Solutions For Our Clients. Harnessing The Power Of Big Data & AI, We Help Institutions Transform Their Businesses To Enrich The Experience That They Offer To Their Customers.</div>
+        <div class="why-us-subtitle">Our Solutions Encompass The Entire Gamut Of Equity Investors Right From An Investor To A Fund Manager. They Are Hyper-Personalized, Dynamic And Devoid Of Biases. We Have Been Entrusted By Thousands Of Investors Over The Years And Have Been Able To Deliver Superlative Returns Consistently, Across Market Conditions. Our Models Have Successfully Solved The Problem Of Research Based On Outdated Market Information And Intuition-Based Investment Decisions.</div>
+      </div>
+      <div class="stats-row">
+        <div class="countries">
+          <div class="blue-text">3</div>
+          <div class="small-text">countries</div>
+        </div>
+        <div class="clients">
+          <div class="blue-text">2L+</div>
+          <div class="small-text">Entrusted clients</div>
+        </div>
+        <div class="legacy">
+          <div class="blue-text">6+</div>
+          <div class="small-text">Years of legacy in india</div>
+        </div>
+        <div class="assets">
+          <div class="blue-text">₹130cr+</div>
+          <div class="small-text">Entrusted clients</div>  
+        </div>
+      </div>
+    </section>
+
+    <section class="who-we-serve">
+      <div class="container">
+        <div class="serve-title text-center">
+          who we <span class="text-blue">serve</span>
+        </div>
+        <div class="cards-column">
+          <div class="columns">
+            <div class="column">
+              <a href="brokers">
+                <div class="service-box">
+                  <img src="assets/images/Broker.svg" alt="main-image" class="main-image">
+                  <img src="assets/images/Broker-white.svg" alt="hover-image" class="hover-image">
+                </div>
+              </a>
+                
+              <a href="research-advisors">
+                <div class="service-box">
+                  <img src="assets/images/RA.svg" alt="main-image" class="main-image">
+                  <img src="assets/images/RA-white.svg" alt="hover-image" class="hover-image">
+                </div>
+              </a>
+            </div>
+            
+            <div class="column">
+              <a href="wealth-mgmt-firm">
+                <div class="service-box">
+                  <img src="assets/images/WMF.svg" alt="main-image" class="main-image">
+                  <img src="assets/images/WMF-white.svg" alt="hover-image" class="hover-image">
+                </div>
+              </a>
+                
+              <a href="treasury-desk">
+                <div class="service-box">
+                  <img src="assets/images/TD.svg" alt="main-image" class="main-image">
+                  <img src="assets/images/TD-white.svg" alt="hover-image" class="hover-image">
+                </div>
+              </a>
+            </div>
+
+            <div class="column">
+              <a href="robo-advisor">
+                <div class="service-box">
+                  <img src="assets/images/RA.svg" alt="main-image" class="main-image">
+                  <img src="assets/images/RA-white.svg" alt="hover-image" class="hover-image">
+                </div>
+              </a>
+                
+              <a href="fund-houses">
+                <div class="service-box">
+                  <img src="assets/images/FH.svg" alt="main-image" class="main-image">
+                  <img src="assets/images/FH-white.svg" alt="hover-image" class="hover-image">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="columns"></div>
+          <div class="columns"></div>
+        </div>
+      </div>
     </section>
     <script src="assets/script.js"></script>
   </body>
