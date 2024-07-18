@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="navbar" id="navbar">
+  <!-- <nav class="navbar" id="navbar">
     <div class="logo">
       <a class="navbar-brand" href="https://jarvisinvest.com/">
         <img src="./assets/images/Jarvis-logo.svg" alt="Jarvis logo" />
@@ -22,15 +22,17 @@
     <ul class="navbar-items">
 
       <li>
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link active" href="#">Home</a>
       </li>
 
-      <li onclick="productBtn()" class="dropbtn">
-        <div class="dropdown">
-          Products
-          <img src="./assets/images/chevron-down.svg" alt="down arrow" />
+      <li onclick="productBtn()">
+        <div class="dropdown dropbtn">
+          <a href="#products">
+            Products
+            <img src="./assets/images/chevron-down.svg" alt="down arrow" />
+          </a>
 
-          <div class="myDropdown dropdown-content">
+          <div id="product-content" class="myDropdown dropdown-content ">
 
             <div class="dropdown-menu-heading">
               Institution
@@ -98,117 +100,114 @@
         </div>
       </li>
 
-      <li onclick="productBtn()" class="dropbtn">
-        <div href="#solutions">
-          Solutions
-          <img src="./assets/images/chevron-down.svg" alt="down arrow" />
-        </div>
-
-        <!-- -------------------------------------------------------------------------   -->
-        <div class="myDropdown solutions-dropdown-content">
-          <!-- -------------------------------------------------------------------------   -->
-          <div class="dropdown-menu-heading">
+      <li onclick="solutionsBtn()" class="dropbtn">
+        <div class="dropdown dropbtn">
+          <a href="#solutions">
             Solutions
-          </div>
-
-          <div class="solutions-columns">
-
-            <div class="left-column">
-              <a href="#" class="dropdown-menu-items">
-                <div class="logo-div">
-                  <img src="./assets/images/solutions-brokers-icon.svg" alt="solutions brokers icon" />
-                </div>
-                <div class="drop-down-heading">
-                  <div class="title-heading text-big">
-                    Brokers
-                  </div>
-                  <div class="title-subtitle text-small">
-                    Empowering Brokers Through Custom Solutions To Improve Efficiency And Increase Profitability.
-                  </div>
-                </div>
-              </a>
+            <img src="./assets/images/chevron-down.svg" alt="down arrow" />
+          </a>
 
 
-              <a href="#" class="dropdown-menu-items">
-                <div class="logo-div">
-                  <img src="./assets/images/solutions-wmf-icon.svg" alt="solutions wmf icon" />
-                </div>
-                <div class="drop-down-heading">
-                  <div class="title-heading text-big">
-                    Wealth Management Firms
-                  </div>
-                  <div class="title-subtitle text-small">
-                    Empowering Wealth Managers With AI To Manage Wealth Even More Efficiently.
-                  </div>
-                </div>
-              </a>
-
-
-              <a href="#" class="dropdown-menu-items">
-                <div class="logo-div">
-                  <img src="./assets/images/solutions-robo-icon.svg" alt="solutions robo icon" />
-                </div>
-                <div class="drop-down-heading">
-                  <div class="title-heading text-big">
-                    Robo Advisors
-                  </div>
-                  <div class="title-subtitle text-small">
-                    Standout From The Crowd With Our Custom Solutions.
-                  </div>
-                </div>
-              </a>
-
-              <a href="#" class="dropdown-menu-items">
-                <div class="logo-div">
-                  <img src="./assets/images/solutions-research-icon.svg" alt="solutions research icon" />
-                </div>
-                <div class="drop-down-heading">
-                  <div class="title-heading text-big">
-                    Research Advisors
-                  </div>
-                  <div class="title-subtitle text-small">
-                    Augment Your Research With Our Best In-Class Analytics.
-                  </div>
-                </div>
-              </a>
+          <div id="solution-content" class="myDropdown solutions-dropdown-content">
+            <div class="dropdown-menu-heading">
+              Solutions
             </div>
 
-            <div class="middle-column">
+            <div class="solutions-columns">
 
+              <div class="left-column">
+                <a href="#" class="dropdown-menu-items">
+                  <div class="logo-div">
+                    <img src="./assets/images/solutions-brokers-icon.svg" alt="solutions brokers icon" />
+                  </div>
+                  <div class="drop-down-heading">
+                    <div class="title-heading text-big">
+                      Brokers
+                    </div>
+                    <div class="title-subtitle text-small">
+                      Empowering Brokers Through Custom Solutions To Improve Efficiency And Increase Profitability.
+                    </div>
+                  </div>
+                </a>
 
-              <a href="#" class="dropdown-menu-items">
-                <div class="logo-div">
-                  <img src="./assets/images/solutions-fund-icon.svg" alt="solutions fund icon" />
-                </div>
-                <div class="drop-down-heading">
-                  <div class="title-heading text-big">
-                    Fund Houses
+                <a href="#" class="dropdown-menu-items">
+                  <div class="logo-div">
+                    <img src="./assets/images/solutions-wmf-icon.svg" alt="solutions wmf icon" />
                   </div>
-                  <div class="title-subtitle text-small">
-                    Enhance The Efficacy & Efficiency Of Investment Models With Our Smart Analytics.
+                  <div class="drop-down-heading">
+                    <div class="title-heading text-big">
+                      Wealth Management Firms
+                    </div>
+                    <div class="title-subtitle text-small">
+                      Empowering Wealth Managers With AI To Manage Wealth Even More Efficiently.
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
 
-              <a href="#" class="dropdown-menu-items">
-                <div class="logo-div">
-                  <img src="./assets/images/solutions-treasury-icon.svg" alt="solutions treasury icon" />
-                </div>
-                <div class="drop-down-heading">
-                  <div class="title-heading text-big">
-                    Treasury Desks
+                <a href="#" class="dropdown-menu-items">
+                  <div class="logo-div">
+                    <img src="./assets/images/solutions-robo-icon.svg" alt="solutions robo icon" />
                   </div>
-                  <div class="title-subtitle text-small">
-                    Increase Profitability And De-Risk Your Investments With The Help Our Curated Solutions.
+                  <div class="drop-down-heading">
+                    <div class="title-heading text-big">
+                      Robo Advisors
+                    </div>
+                    <div class="title-subtitle text-small">
+                      Standout From The Crowd With Our Custom Solutions.
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
 
+                <a href="#" class="dropdown-menu-items">
+                  <div class="logo-div">
+                    <img src="./assets/images/solutions-research-icon.svg" alt="solutions research icon" />
+                  </div>
+                  <div class="drop-down-heading">
+                    <div class="title-heading text-big">
+                      Research Advisors
+                    </div>
+                    <div class="title-subtitle text-small">
+                      Augment Your Research With Our Best In-Class Analytics.
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="middle-column">
+                <a href="#" class="dropdown-menu-items">
+                  <div class="logo-div">
+                    <img src="./assets/images/solutions-fund-icon.svg" alt="solutions fund icon" />
+                  </div>
+                  <div class="drop-down-heading">
+                    <div class="title-heading text-big">
+                      Fund Houses
+                    </div>
+                    <div class="title-subtitle text-small">
+                      Enhance The Efficacy & Efficiency Of Investment Models With Our Smart Analytics.
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#" class="dropdown-menu-items">
+                  <div class="logo-div">
+                    <img src="./assets/images/solutions-treasury-icon.svg" alt="solutions treasury icon" />
+                  </div>
+                  <div class="drop-down-heading">
+                    <div class="title-heading text-big">
+                      Treasury Desks
+                    </div>
+                    <div class="title-subtitle text-small">
+                      Increase Profitability And De-Risk Your Investments With The Help Our Curated Solutions.
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="right-column">
+
+              </div>
             </div>
-
-            <div class="right-column"></div>
           </div>
-        </div>
         </div>
       </li>
 
@@ -226,9 +225,10 @@
         <button class="demo-btn primary-btn">Schedule Demo</button>
       </li>
     </ul>
-  </nav>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </nav> -->
 
-  <main class="main-section">
+  <!-- <main class="main-section">
     <div class="container text-center">
       <h5 class="header-text-medium">
         REDEFINE THE PARADIGM IN MANAGING YOUR INVESTMENTS
@@ -242,13 +242,13 @@
       </p>
       <button class="secondary-btn">Schedule Demo</button>
     </div>
-  </main>
+  </main> -->
 
-  <section class="image-section">
+  <!-- <section class="image-section">
     <div class="container-fluid">
-      <!-- <img src="https://institution.jarvisinvest.com/assets//images/home/jarvis-video.gif" alt="jarvis-video" /> -->
+      <img src="https://institution.jarvisinvest.com/assets//images/home/jarvis-video.gif" alt="jarvis-video" />
     </div>
-  </section>
+  </section> -->
 
   <section class="features-section">
     <div class="container">
@@ -323,19 +323,19 @@
         Intuition-Based Investment Decisions.</div>
 
       <div class="stats-row">
-        <div class="countries">
+        <div class="stats countries">
           <div class="blue-text">3</div>
           <div class="small-text">countries</div>
         </div>
-        <div class="clients">
+        <div class="stats clients">
           <div class="blue-text">2L+</div>
           <div class="small-text">Entrusted clients</div>
         </div>
-        <div class="legacy">
+        <div class="stats legacy">
           <div class="blue-text">6+</div>
           <div class="small-text">Years of legacy in india</div>
         </div>
-        <div class="assets">
+        <div class="stats assets">
           <div class="blue-text">₹130cr+</div>
           <div class="small-text">Entrusted clients</div>
         </div>
@@ -435,7 +435,7 @@
     </div>
   </section>
 
-  <section class="partners-section">
+  <!-- <section class="partners-section">
     <div class="container">
 
       <div class="text-center">
@@ -484,7 +484,7 @@
         <div class="buttons" id="button2"></div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="collaborators">
     <div class="container">
@@ -799,20 +799,27 @@
 
       <div class="credintials">
         <div class="basl-membership-number">
-          <div class="basl-text">BASL Membership</div>
+          <div class="basl-text">
+            BASL Membership
+          </div>
           <div class="extra-info">
             <img src="assets/images/bsal.svg" alt="">
             1560
           </div>
         </div>
+
         <div class="sebi-registration-number">
-          <div class="sebi-text">SEBI Registered Investment Advisor</div>
+          <div class="sebi-text">
+            SEBI Registered Investment Advisor
+          </div>
           <div class="extra-info">
             <img src="assets/images/SEBI.png" alt="">
             INA 000013235
           </div>
         </div>
+
       </div>
+
     </div>
 
     </div>
