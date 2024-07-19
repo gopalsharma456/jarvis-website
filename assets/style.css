@@ -515,25 +515,27 @@ svg {
   text-transform: capitalize;
 }
 
-.partner-slider {
+.swiper {
   margin-top: 52px;
   margin-bottom: 30px;
 }
 
-.partner-list {
+.swiper-wrapper {
   width: 100%;
   height: 400px;
+  position: relative;
+
 }
 
-.partner-slider .partner-list1,
-.partner-slider .partner-list2 {
+.swiper .partner-list1,
+.swiper .partner-list2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.partner-list .partner-image {
+.swiper-wrapper .partner-image {
   height: 90px;
   width: 178px;
   padding: 1px;
@@ -545,7 +547,9 @@ svg {
   margin: 10px;
 }
 
+
 .radio-buttons {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -566,8 +570,12 @@ svg {
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination{
+  margin-top: 10px;
 }
 
 /* partner section ends */
