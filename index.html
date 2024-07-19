@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/style.css" />
@@ -9,17 +10,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <title>Document</title>
 </head>
 
 <body>
-  <!-- <nav class="navbar" id="navbar">
+  <nav class="navbar" id="navbar">
     <div class="logo">
       <a class="navbar-brand" href="https://jarvisinvest.com/">
         <img src="./assets/images/Jarvis-logo.svg" alt="Jarvis logo" />
       </a>
     </div>
-    <ul class="navbar-items">
+    <ul id="navbar-items" class="navbar-items">
 
       <li>
         <a class="nav-link active" href="#">Home</a>
@@ -27,9 +30,13 @@
 
       <li onclick="productBtn()">
         <div class="dropdown dropbtn">
-          <a href="#products">
-            Products
-            <img src="./assets/images/chevron-down.svg" alt="down arrow" />
+          <a href="#products" class="product-link">
+            <div>
+              Products
+            </div>
+            <div>
+              <img src="./assets/images/chevron-down.svg" alt="down arrow" />
+            </div>
           </a>
 
           <div id="product-content" class="myDropdown dropdown-content ">
@@ -102,9 +109,13 @@
 
       <li onclick="solutionsBtn()" class="dropbtn">
         <div class="dropdown dropbtn">
-          <a href="#solutions">
-            Solutions
-            <img src="./assets/images/chevron-down.svg" alt="down arrow" />
+          <a href="#solutions" class="product-link">
+            <div>
+              Solutions
+            </div>
+            <div>
+              <img src="./assets/images/chevron-down.svg" alt="down arrow" />
+            </div>
           </a>
 
 
@@ -225,10 +236,12 @@
         <button class="demo-btn primary-btn">Schedule Demo</button>
       </li>
     </ul>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  </nav> -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <img src="assets/images/menu.svg" alt="">
+    </a>
+  </nav>
 
-  <!-- <main class="main-section">
+  <main class="main-section">
     <div class="container text-center">
       <h5 class="header-text-medium">
         REDEFINE THE PARADIGM IN MANAGING YOUR INVESTMENTS
@@ -242,13 +255,13 @@
       </p>
       <button class="secondary-btn">Schedule Demo</button>
     </div>
-  </main> -->
+  </main>
 
-  <!-- <section class="image-section">
+  <section class="image-section">
     <div class="container-fluid">
-      <img src="https://institution.jarvisinvest.com/assets//images/home/jarvis-video.gif" alt="jarvis-video" />
+      <!-- <img src="https://institution.jarvisinvest.com/assets//images/home/jarvis-video.gif" alt="jarvis-video" /> -->
     </div>
-  </section> -->
+  </section>
 
   <section class="features-section">
     <div class="container">
@@ -435,7 +448,7 @@
     </div>
   </section>
 
-  <!-- <section class="partners-section">
+  <section class="partners-section">
     <div class="container">
 
       <div class="text-center">
@@ -461,7 +474,6 @@
             <div class="partner-image"><img src="assets/images/partner13.svg" alt="partner image"></div>
             <div class="partner-image"><img src="assets/images/partner14.svg" alt="partner image"></div>
           </div>
-
           <div class="partner-list2">
             <div class="partner-image"><img src="assets/images/partner15.png" alt="partner image"></div>
             <div class="partner-image"><img src="assets/images/partner16.png" alt="partner image"></div>
@@ -478,13 +490,13 @@
             <div class="partner-image"><img src="assets/images/partner27.png" alt="partner image"></div>
           </div>
         </div>
-      </div>
-      <div class="radio-buttons">
-        <div class="buttons" id="button1"></div>
-        <div class="buttons" id="button2"></div>
+        <div class="radio-buttons">
+          <div class="buttons" id="button1"></div>
+          <div class="buttons" id="button2"></div>
+        </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <section class="collaborators">
     <div class="container">

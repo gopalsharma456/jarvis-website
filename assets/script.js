@@ -4,24 +4,22 @@ let x = document.getElementById("product-content");
 let y = document.getElementById("solution-content");
 
 function productBtn() {
-  x.classList.toggle("dropdown-content");
+  x.classList.toggle("show");
+  
 }
 
 function solutionsBtn() {
-  y.classList.toggle("solutions-dropdown-content");
+  y.classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
-// window.onclick = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
 
-// }
+window.onclick = function (event) {
+  
+  
+};
+
+function myFunction(){
+  let menuItems = document.getElementById('navbar-items')
+  menuItems.classList.toggle('show')
+}
