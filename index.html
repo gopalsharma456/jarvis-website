@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <!-- navbar section start -->
   <nav class="navbar" id="navbar">
     <div class="logo">
       <a class="navbar-brand" href="https://jarvisinvest.com/">
@@ -25,12 +26,12 @@
     <ul id="navbar-items" class="navbar-items">
 
       <li>
-        <a class="nav-link active" href="#">Home</a>
+        <a onclick="activeClass('home-link')" class="nav-link active" id="home-link" href="#">Home</a>
       </li>
 
       <li onclick="productBtn()">
         <div class="dropdown dropbtn">
-          <a href="#products" class="product-link">
+          <a href="#products" onclick="activeClass('products-link')" id="products-link" class="nav-link product-link">
             <div>
               Products
             </div>
@@ -109,7 +110,8 @@
 
       <li onclick="solutionsBtn()" class="dropbtn">
         <div class="dropdown dropbtn">
-          <a href="#solutions" class="product-link">
+          <a href="#solutions" onclick="activeClass('solutions-link')" id="solutions-link"
+            class="nav-link product-link">
             <div>
               Solutions
             </div>
@@ -222,12 +224,13 @@
         </div>
       </li>
 
-      <li><a href="#company">Company</a></li>
-      <li><a href="#library">Library</a></li>
-      <li><a href="#media">Media</a></li>
-      <li><a href="#contact-us">Contact Us</a></li>
+      <li><a href="#" onclick="activeClass('company-link')" id="company-link" class="nav-link">Company</a></li>
+      <li><a href="#" onclick="activeClass('library-link')" id="library-link" class="nav-link">Library</a></li>
+      <li><a href="#media" onclick="activeClass('media-link')" id="media-link" class="nav-link">Media</a></li>
+      <li><a href="#contact-us" onclick="activeClass('contact-us-link')" id="contact-us-link" class="nav-link">Contact
+          Us</a></li>
       <li>
-        <a href="#retail">
+        <a href="#retail" onclick="activeClass('retail-link')" id="retail-link" class="nav-link">
           <img src="./assets/images/retail-icon.svg" alt="" /> Retail
           <img src="assets/images/right-arrow-icon.svg" alt="" />
         </a>
@@ -240,7 +243,9 @@
       <img src="assets/images/menu.svg" alt="">
     </a>
   </nav>
+  <!-- navbar section end -->
 
+  <!-- main section start -->
   <main class="main-section">
     <div class="container text-center">
       <h5 class="header-text-medium">
@@ -256,13 +261,17 @@
       <button class="secondary-btn">Schedule Demo</button>
     </div>
   </main>
+  <!-- main section end -->
 
+  <!-- jarvis video section start -->
   <section class="image-section">
     <div class="container-fluid">
       <img src="https://institution.jarvisinvest.com/assets//images/home/jarvis-video.gif" alt="jarvis-video" />
     </div>
   </section>
+  <!-- jarvis video section end -->
 
+  <!-- features section start -->
   <section class="features-section">
     <div class="container">
       <div class="center-text">
@@ -316,8 +325,9 @@
       </div>
     </div>
   </section>
+  <!-- features section start -->
 
-
+  <!-- why us section start -->
   <section class="why-us">
     <div class="container">
       <div class="why-us-title">
@@ -355,7 +365,9 @@
       </div>
     </div>
   </section>
+  <!-- why us section end -->
 
+  <!-- who we serve section start -->
   <section class="who-we-serve">
     <div class="container">
       <div class="serve-title text-center">
@@ -447,6 +459,9 @@
       </div>
     </div>
   </section>
+  <!-- who we serve section end -->
+
+  <!-- partners section start -->
 
   <section class="partners-section">
     <div class="container">
@@ -456,58 +471,60 @@
         <div class="partner-subtitle">Access India’s Top Broking Platforms For A Seamless Execution Experience.</div>
       </div>
 
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="partner-list1">
-                  <div class="partner-image"><img src="assets/images/partner1.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner2.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner3.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner4.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner5.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner6.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner7.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner8.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner9.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner10.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner11.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner12.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner13.svg" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner14.svg" alt="partner image"></div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="partner-list2">
-                  <div class="partner-image"><img src="assets/images/partner15.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner16.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner17.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner18.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner19.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner20.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner21.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner22.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner23.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner24.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner25.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner26.png" alt="partner image"></div>
-                  <div class="partner-image"><img src="assets/images/partner27.png" alt="partner image"></div>
-                </div>
-              
-              </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="partner-list1">
+              <div class="partner-image"><img src="assets/images/partner1.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner2.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner3.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner4.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner5.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner6.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner7.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner8.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner9.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner10.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner11.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner12.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner13.svg" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner14.svg" alt="partner image"></div>
             </div>
-          
-            <div class="swiper-pagination"></div>
-          
           </div>
+          <div class="swiper-slide">
+            <div class="partner-list2">
+              <div class="partner-image"><img src="assets/images/partner15.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner16.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner17.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner18.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner19.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner20.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner21.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner22.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner23.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner24.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner25.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner26.png" alt="partner image"></div>
+              <div class="partner-image"><img src="assets/images/partner27.png" alt="partner image"></div>
+            </div>
 
-
-          
           </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
       </div>
+
+
+
+    </div>
+    </div>
     </div>
 
   </section>
+  <!-- partners section end -->
 
+  <!-- collaborators section start -->
   <section class="collaborators">
     <div class="container">
       <div class="text-center collaborators-title">
@@ -560,7 +577,9 @@
       </div>
     </div>
   </section>
+  <!-- collaborators section end -->
 
+  <!-- social media section start -->
   <section class="social-media" id="media">
     <div class="container">
       <div class="text-center">
@@ -632,7 +651,9 @@
       </div>
     </div>
   </section>
+  <!-- social media section end -->
 
+  <!-- contact-us section start -->
   <section class="contact-us" id="contact-us">
     <div class="container">
       <div class="contact-form" id="contactForm">
@@ -651,27 +672,27 @@
               <div class="form-group">
                 <label for="We are" class="form-label">We are</label>
                 <div class="select-options">
-                  <label for="" class="option selected">
+                  <label onclick="enquiryInput('option1')" id="option1" for="" class="option selected">
                     <input type="checkbox" value="Broker" checked>
                     Broker
                   </label>
-                  <label for="" class="option">
+                  <label onclick="enquiryInput('option2')" id="option2" for="" class="option">
                     <input type="checkbox" value="Wealth Management Firm" checked>
                     Wealth Management Firm
                   </label>
-                  <label for="" class="option">
+                  <label onclick="enquiryInput('option3')" id="option3" for="" class="option">
                     <input type="checkbox" value="Robo Advisors" checked>
                     Robo Advisors
                   </label>
-                  <label for="" class="option">
+                  <label onclick="enquiryInput('option4')" id="option4" for="" class="option">
                     <input type="checkbox" value="Research Advisors" checked>
                     Research Advisors
                   </label>
-                  <label for="" class="option">
+                  <label onclick="enquiryInput('option5')" id="option5" for="" class="option">
                     <input type="checkbox" value="Treasury Desk" checked>
                     Treasury Desk
                   </label>
-                  <label for="" class="option">
+                  <label onclick="enquiryInput('option6')" id="option6" for="" class="option">
                     <input type="checkbox" value="Fund Houses" checked>
                     Fund Houses
                   </label>
@@ -738,7 +759,10 @@
       </div>
     </div>
   </section>
+  <!-- contact-us section end -->
 
+
+  <!-- footer section start -->
   <footer class="footer-section">
 
     <div class="container">
@@ -851,6 +875,8 @@
       <div class="rights">@ 2023 all rights reserved</div>
     </div>
   </footer>
+  <!-- footer section end -->
+
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="assets/script.js"></script>
 </body>

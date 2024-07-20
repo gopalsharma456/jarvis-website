@@ -4,20 +4,25 @@ toggle between hiding and showing the dropdown content */
 let x = document.getElementById("product-content");
 let y = document.getElementById("solution-content");
 
-function productBtn(event) {
+function productBtn() {
   x.classList.toggle("show");
-  event.stopPropagation();
 }
 
-function solutionsBtn(event) {
+function solutionsBtn() {
   y.classList.toggle("show");
-  event.stopPropagation();
+}
+
+function activeClass(id){
+  let element = document.getElementById(`${id}`)
+  element.classList.toggle('active')
+
 }
 
 // Close the dropdown menu if the user clicks outside of it
 
 window.onclick = function (event) {
-  
+  // x.classList.remove('show')
+  // y.classList.remove('show')
 };
 
 function myFunction() {
@@ -35,3 +40,9 @@ var swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+
+function enquiryInput(id){
+  let selectedInput = document.getElementById(`${id}`)
+  selectedInput.classList.toggle('selected')
+}
