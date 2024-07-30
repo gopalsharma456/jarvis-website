@@ -9,11 +9,10 @@
   font-size: 16px;
 }
 
-/* body {
-    color: #667085;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-} */
+::after, ::before {
+  box-sizing: border-box;
+}
+
 :root {
   --primary-background-color: #0b5ed7;
   --primary-color: #ffffff;
@@ -948,28 +947,37 @@ textarea.form-control {
     flex-basis: auto;
   }
 
-  .navbar .navbar-items .nav-link::before {
+  .navbar-items .nav-link::before {
     content: "";
-    display: none;
+    /* display: none; */
     height: 3px;
-    width: 100%;
+    width: max-content;
     position: absolute;
     left: 0;
     bottom: 0;
+    right: 0;
     background: rgba(0, 0, 0, 0);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .navbar .navbar-items .nav-link:not(.primary-btn):hover::before,
-  .navbar .navbar-items .nav-link.active::before,
-  .navbar .navbar-items .nav-link.show::before {
     background: #1556d6;
+  }
+  
+  .navbar-items .nav-link:not(.primary-btn):hover::before,
+  .navbar-items .nav-link.active::before,
+  .navbar-items .nav-link.show::before {
+    transition: all 0.1s ease-in-out;
+    background: #1556d6;
+    border-bottom: 3px solid #1556d6;
+    /* content: ''; */
+    position: relative;
+    top: 40px;
+    height: 3px;
+    left: 40px;
+    width: 100%;
   }
 }
 
 @media (max-width: 1120px) {
   .navbar-items li {
-    padding: 0 4px;
+    padding: 0 7px;
   }
 }
 
@@ -1051,6 +1059,11 @@ textarea.form-control {
   .main-section h1,
   .main-section h1 span {
     font-size: 50px;
+  }
+
+  .secondary-btn {
+    font-size: 18px;
+    padding: 16px 35px;
   }
 
   /* main section end */
@@ -1581,13 +1594,17 @@ textarea.form-control {
 
   .sebi-registration-number {
     margin-top: 10px;
-    margin-left: 45%;
+    margin-left: 28%;
     margin-bottom: 10px;
   }
 
   .footer-section .copyrights {
     font-weight: 400;
     padding: 40px 24px;
+  }
+
+  .copyrights {
+    display: block;
   }
 
   /* footer section ends*/
